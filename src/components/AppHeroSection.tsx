@@ -7,8 +7,8 @@ import { Button } from "./ui/button";
 const AppHeroSection = () => {
   return (
     <SectionWrapper>
-      <div className="flex gap-8 md:gap-12 items-center justify-between">
-        <div className="flex flex-col gap-6">
+      <div className="flex-col lg:flex-row flex gap-16 items-center justify-between">
+        <div className="flex flex-col gap-6 text-center lg:text-start">
           <FadeInWrapper className="text-sm tracking-widest text-muted-foreground">
             EST. NOVEMBER 24, 2023
           </FadeInWrapper>

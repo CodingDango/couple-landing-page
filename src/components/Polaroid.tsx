@@ -15,7 +15,7 @@ export default function Polaroid({
   classname,
 }: PolaroidProps) {
   return (
-    <div className={`max-w-xl flex items-center flex-col p-8 pb-12 rounded-sm shadow-2xl gap-8 ${wrapperClass}`}>
+    <div className={`bg-white max-w-xl flex items-center flex-col p-4 pb-8 sm:p-6 sm:pb-12 rounded-sm shadow-2xl gap-8 ${wrapperClass}`}>
       <div className={`w-full ${classname}`}>
         <img className="rounded-sm object-cover w-full h-full" src={src} />
       </div>

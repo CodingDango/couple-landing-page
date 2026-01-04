@@ -1,3 +1,4 @@
+import Anniversary from "./components/Anniversary"
 import AppGallery from "./components/AppGallery"
 import AppHeroSection from "./components/AppHeroSection"
 import Timeline from "./components/Timeline"
@@ -8,6 +9,7 @@ function App() {
       <AppHeroSection/>
       <Timeline/>
       <AppGallery/>
+      <Anniversary/>
     </main>
   )
 }
