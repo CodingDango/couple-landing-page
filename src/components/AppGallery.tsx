@@ -1,13 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
-// @ts-expect-error: so it works
 import "swiper/css";
-
-// @ts-expect-error: so it works
 import "swiper/css/navigation";
-
-// @ts-expect-error: so it works
 import "swiper/css/pagination";
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
