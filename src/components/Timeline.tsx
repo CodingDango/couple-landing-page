@@ -50,7 +50,7 @@ const Timeline = () => {
                   }`}
                 >
                   <FadeInWrapper
-                    className={`aspect-square max-w-sm w-full p-4 shadow-2xl rounded-2xl ${
+                    className={`overflow-hidden aspect-square max-w-sm w-full p-4 shadow-2xl rounded-2xl ${
                       isEven ? "md:order-1 md:rotate-3" : "md:-rotate-3"
                     }`}
                   >
