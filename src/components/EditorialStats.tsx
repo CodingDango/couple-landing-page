@@ -27,12 +27,12 @@ const EditorialStats = () => {
               ]}
             />
 
-          <div className="flex flex-col justify-center gap-12">
+          <div className="flex flex-col items-center justify-center gap-12">
             <h2 className="text-center text-4xl md:text-5xl font-serif">
               Our Story in Numbers
             </h2>
 
-            <div className="space-y-8">
+            <div className="w-full max-w-lg flex flex-col gap-8 px-4">
               {stats.map((stat) => (
                 <div
                   key={stat.label}
