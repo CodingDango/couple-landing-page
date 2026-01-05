@@ -1,7 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper/modules';
 
+// @ts-expect-error: so it works
 import 'swiper/css';
+
+// @ts-expect-error: so it works
 import 'swiper/css/effect-cards';
 
 interface Props {
