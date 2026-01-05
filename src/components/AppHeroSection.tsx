@@ -12,7 +12,7 @@ const AppHeroSection = () => {
             EST. NOVEMBER 24, 2023
           </FadeInWrapper>
 
-          <FadeInWrapper className="font-serif text-5xl md:text-7xl" delay={0.2}>
+          <FadeInWrapper className="font-serif text-5xl md:text-6xl md:text-7xl" delay={0.2}>
             Sarah <span className="text-muted-foreground">&</span>
             <br />
             Cameron

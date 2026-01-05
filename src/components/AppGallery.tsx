@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import SectionWrapper from "./SectionWrapper";
+import FadeInWrapper from "./FadeInWrapper";
 
 const galleryImages = [
   "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000&auto=format&fit=crop",
@@ -21,11 +22,15 @@ const AppGallery = () => {
     <SectionWrapper wrapperClassName="px-0!" childrenWrapperClass="max-w-none">
       <div className="flex flex-col gap-24">
         <div className="w-full max-w-7xl mx-auto px-6">
-          <h2 className="text-center text-5xl font-serif">Captured Moments</h2>
-          <div className="text-muted-foreground text-center text-lg mt-6">(Swipe to browse gallery)</div>
+          <FadeInWrapper>
+            <h2 className="text-center text-4xl md:text-5xl font-serif">Captured Moments</h2>
+          </FadeInWrapper>
+          <FadeInWrapper delay={0.2}>
+            <div className="text-muted-foreground text-center text-lg mt-6">(Swipe to take a trip down memory lane)</div>
+          </FadeInWrapper>
         </div>
 
-        <div className="w-full relative space-y-12">
+        <FadeInWrapper delay={0.4} className="w-full relative space-y-12">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={40} // <--- THE GAP (in pixels). Change this number to change the gap.
@@ -65,7 +70,7 @@ const AppGallery = () => {
               <ArrowRight size={32} />
             </Button>
           </div>
-        </div>
+        </FadeInWrapper>
       </div>
     </SectionWrapper>
   );

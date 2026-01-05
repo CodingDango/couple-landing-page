@@ -10,7 +10,6 @@ interface Props {
 
 export default function CardsCarousel({ photos = [] } : Props) {
   if (!photos || photos.length === 0) {
-    // Return a placeholder or null if there are no photos to display
     return <div className="text-center text-gray-500">No photos to display.</div>;
   }
   
@@ -19,8 +18,6 @@ export default function CardsCarousel({ photos = [] } : Props) {
       effect={'cards'}
       grabCursor={true}
       modules={[EffectCards]}
-      // The container size is the most important part.
-      // It's responsive: smaller on mobile, larger on medium screens and up.
       className="w-72 h-104 md:w-88 md:h-120"
     >
       {photos.map((photoUrl, index) => (
@@ -28,7 +25,6 @@ export default function CardsCarousel({ photos = [] } : Props) {
           key={index}
           className="bg-white rounded-2xl shadow-2xl"
         >
-          {/* All custom styling (border, shadow) goes on this inner div. */}
           <div className="w-full h-full rounded-2xl  overflow-hidden">
             <img
               src={photoUrl}
