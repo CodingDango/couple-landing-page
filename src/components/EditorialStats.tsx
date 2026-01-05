@@ -17,10 +17,9 @@ const EditorialStats = () => {
   const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
 
   return (
-    <div ref={ref}>
+    <div id="stats" ref={ref}>
       <SectionWrapper wrapperClassName="bg-white!">
-
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <section className="grid md:grid-cols-2 gap-16 items-center">
             <CardsCarousel
               photos={[
                 "https://images.stockcake.com/public/b/0/b/b0bfe8c0-f5b4-4148-ab02-5b390130e6e3_large/heart-latte-art-stockcake.jpg",
@@ -58,7 +57,7 @@ const EditorialStats = () => {
               ))}
             </div>
           </div>
-        </div>
+        </section>
       </SectionWrapper>
     </div>
   );

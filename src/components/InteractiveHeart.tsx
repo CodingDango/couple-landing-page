@@ -9,8 +9,8 @@ export default function InteractiveHeart() {
     <div className="w-full h-108 cursor-grab">
       <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
         <Suspense fallback={null}>
-          <ambientLight intensity={3} />
-          <directionalLight position={[10, 10, 5]} intensity={1.5} />
+          <ambientLight intensity={3.5} />
+          <directionalLight position={[10, 10, 5]} intensity={2} />
           <HeartModel scale={1.5} /> 
           <OrbitControls 
             enableZoom={false} 
