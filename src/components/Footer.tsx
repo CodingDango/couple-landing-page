@@ -1,5 +1,4 @@
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
-import { Button } from "./ui/button";
 import SectionWrapper from "./SectionWrapper";
 import { scrollToSection } from "@/lib/utils";
 

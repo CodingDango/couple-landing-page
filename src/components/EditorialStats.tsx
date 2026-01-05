@@ -4,7 +4,6 @@ import CountUp from "react-countup";
 import SectionWrapper from "./SectionWrapper"; // Assuming you have this
 import CardsCarousel from "./CardsCarousel";
 import { Bus, Coffee, Film, Heart } from "lucide-react";
-import FadeInWrapper from "./FadeInWrapper";
 
 const stats = [
   { label: "Days Together", value: 2450, Icon: Heart },
