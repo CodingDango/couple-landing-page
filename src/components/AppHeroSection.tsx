@@ -1,7 +1,6 @@
 import FadeInWrapper from "./FadeInWrapper";
 import Polaroid from "./Polaroid";
 import SectionWrapper from "./SectionWrapper";
-import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
 const AppHeroSection = () => {
@@ -31,7 +30,7 @@ const AppHeroSection = () => {
           </FadeInWrapper>
         </div>
 
-        <FadeInWrapper delay={0.8}>
+        <FadeInWrapper delay={0.8} className="-rotate-3">
           <Polaroid 
             subtitle="Happy Days"
           />

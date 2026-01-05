@@ -33,9 +33,11 @@ const Timeline = () => {
   return (
     <SectionWrapper wrapperClassName="bg-white">
       <div className=" flex flex-col gap-24">
-        <h2 className="font-serif text-3xl md:text-5xl text-center">
-          Timeline
-        </h2>
+        <FadeInWrapper>
+          <h2 className="font-serif text-3xl md:text-5xl text-center">
+            Timeline
+          </h2>
+        </FadeInWrapper>
         <div className="flex flex-col gap-20">
           {timelineEvents.map(({ year, title, description, image }, idx) => {
             const isEven = (idx + 1) % 2 == 0;
@@ -47,21 +49,19 @@ const Timeline = () => {
                 }`}
               >
                 <FadeInWrapper
-                  className={`aspect-square max-w-sm w-full p-4 shadow-2xl rounded-full ${
-                    isEven ? "order-1" : ""
+                  className={`aspect-square max-w-sm w-full p-4 shadow-2xl rounded-2xl ${
+                    isEven ? "order-1 rotate-3" : "-rotate-3"
                   }`}
                 >
                   <img
-                    className="object-cover w-full h-full rounded-full"
+                    className="object-cover w-full h-full rounded-2xl"
                     src={image}
                   />
                 </FadeInWrapper>
 
                 <FadeInWrapper
                   delay={0.2}
-                  className={`flex flex-col gap-4 ${
-                    isEven ? "items-end" : ""
-                  }`}
+                  className={`flex flex-col gap-4 ${isEven ? "items-end" : ""}`}
                 >
                   <Badge
                     variant={"default"}

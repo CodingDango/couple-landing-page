@@ -1,10 +1,6 @@
-import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import required modules
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 
-// Import Swiper styles (Standard CSS, no magic)
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -26,7 +22,7 @@ const AppGallery = () => {
       <div className="flex flex-col gap-24">
         <div className="w-full max-w-7xl mx-auto px-6">
           <h2 className="text-center text-5xl font-serif">Captured Moments</h2>
-          <div className="text-muted-foreground text-center text-lg mt-6">Swipe to browse gallery</div>
+          <div className="text-muted-foreground text-center text-lg mt-6">(Swipe to browse gallery)</div>
         </div>
 
         <div className="w-full relative space-y-12">
@@ -49,7 +45,7 @@ const AppGallery = () => {
                 style={{ width: window.innerWidth < 768 ? "85%" : "400px" }}
               >
                 <div>
-                  <div className="rounded-[2rem] border-12 border-white aspect-[3/4] relative group shadow-xl transition-all duration-500 bg-white overflow-hidden">
+                  <div className="rounded-2xl border-12 border-white aspect-[3/4] relative group shadow-xl transition-all duration-500 bg-white overflow-hidden">
                     <img
                       src={src}
                       alt="Gallery"

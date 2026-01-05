@@ -3,10 +3,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.font-handwriting {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --radius: 0.8rem;
   --background: var(--color-neutral-50);
-  --foreground: oklch(0.145 0 0);
+  --foreground: var(--color-neutral-900);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);

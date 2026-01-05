@@ -1,3 +1,5 @@
+import { Heart } from "lucide-react";
+
 const DEFAULT_IMAGE =
   "https://img.freepik.com/free-photo/caucasian-pretty-girl-walking-around-city-with-boyfriend-smiling-brunette-man-spending-weekend-with-girlfriend_197531-12261.jpg?t=st=1767496041~exp=1767499641~hmac=7a85da3ed5504a5d8c5d0fc02d3933c207fbfed2b09269dc774dfe8ecc40ca67";
 
@@ -21,8 +23,10 @@ export default function Polaroid({
       </div>
 
       {/* so all polaroids are consistent heights regardless of subtitle */}
-      <span className="text-muted-foreground text-lg max-w-lg text-center font-serif font-medium italic">
+      <span className="text-muted-foreground text-3xl max-w-lg text-center font-handwriting flex gap-4 items-center">
+        <Heart/>
         { subtitle ? subtitle : <span className="invisible">empty</span>}
+        <Heart/>
       </span>
     </div>
   );
