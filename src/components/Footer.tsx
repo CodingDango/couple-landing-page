@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { HeartHandshake } from 'lucide-react';
 import SectionWrapper from "./SectionWrapper";
 import { scrollToSection } from "@/lib/utils";
 
@@ -17,31 +18,22 @@ export default function Footer() {
           <div className="flex gap-8 flex-wrap items-center justify-center">
             {sections.map(({ id, name }) => (
               <button
-                className=" cursor-pointer font-serif text-lg hover hover:text-black hover:underline underline-offset-4 transition-all"
+                className="cursor-pointer font-serif text-lg hover hover:text-black hover:underline underline-offset-4 transition-all"
                 onClick={() => scrollToSection(id)}
               >
                 {name}
               </button>
             ))}
           </div>
-          <div className="flex gap-8 items-center ">
-            <a href="#" className="hover:text-rose-400 transition-colors">
-              <FaFacebook className="size-8" />
-            </a>
-            <a href="#" className="hover:text-rose-400 transition-colors">
-              <FaInstagram className="size-8" />
-            </a>
-            <a href="#" className="hover:text-rose-400 transition-colors">
-              <FaTiktok className="size-8" />
-            </a>
-          </div>
+
         </div>
-        {/* --- THE MONOGRAM --- */}
-        <div className="font-serif ">
-          <span className="text-4xl">Sarah</span>
-          <span className="text-2xl text-muted-foreground mx-2">&</span>
-          <span className="text-4xl">Cameron</span>
+        <div className="font-serif flex justify-between items-center gap-4">
+          <span className="text-4xl">S</span>
+          <div className="text-muted-foreground"><HeartHandshake/></div>
+          <span className="text-4xl">C</span>
         </div>
+
+        <div className="text-muted-foreground italic">Our story began in November 2018</div>
       </footer>
     </SectionWrapper>
   );
