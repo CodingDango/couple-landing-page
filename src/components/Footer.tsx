@@ -1,7 +1,7 @@
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { HeartHandshake } from 'lucide-react';
-import SectionWrapper from "./SectionWrapper";
 import { scrollToSection } from "@/lib/utils";
+
+import SectionWrapper from "./SectionWrapper";
 
 const sections = [
   { id: "timeline", name: "Timeline" },
