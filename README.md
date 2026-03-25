@@ -2,7 +2,7 @@
 
 A modern, responsive single-page application built to showcase a relationship journey. This project demonstrates advanced UI/UX implementation, 3D model integration, and smooth interactive animations.
 
-**[Live Demo Link](https::\\couple-landing-page.vercel.app)**
+**[Live Demo Link](https:://couple-landing-page.vercel.app)**
 
 ## Features
 
