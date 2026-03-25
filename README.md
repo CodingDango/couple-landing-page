@@ -1,73 +1,27 @@
-# React + TypeScript + Vite
+# Modern Couples Relationship Timeline
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive single-page application built to showcase a relationship journey. This project demonstrates advanced UI/UX implementation, 3D model integration, and smooth interactive animations.
 
-Currently, two official plugins are available:
+**[Live Demo Link](couple-landing-page.vercel.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## React Compiler
+* **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewports.
+* **Smooth Navigation**: Implementation of scroll-to-section logic for both header and footer navigation buttons.
+* **Fade-in Animations**: Utilized Framer Motion to create scroll-triggered entry animations for a more professional feel.
+* **Full-Width Swiper Gallery**: A responsive image carousel that spans the entire width of the page to eliminate visual cut-offs.
+* **Dynamic Statistics**: A data section featuring React CountUp animations that trigger when the user scrolls into view.
+* **Stacked Card Carousel**: A modern, clean card component placed alongside the statistics to showcase multiple images in a compact space.
+* **3D Model Integration**: An interactive 3D heart model built with Three.js. The model features continuous rotation and allows for direct user interaction.
+* **Modern UI Components**: Built with a mobile-first approach using Shadcn/UI for consistent and accessible design patterns.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Framework**: React (Vite)
+* **Language**: TypeScript
+* **Styling**: Tailwind CSS + Shadcn/UI
+* **3D Engine**: Three.js (React Three Fiber)
+* **Animations**: Framer Motion
+* **Sliders**: Swiper.js
+* **Data Display**: React CountUp
+  
